@@ -1,0 +1,52 @@
+name: Update fuel prices
+
+on:
+  schedule:
+    # GitHub's shortest interval is 5 minutes, and a run can start later than the clock time.
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fuel-prices
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out price history
+        uses: actions/checkout@v4
+        with:
+          ref: data
+          path: price-data
+
+      - name: Check out updater
+        uses: actions/checkout@v4
+        with:
+          path: source
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Fetch Raleigh 7-Eleven prices
+        working-directory: source
+        env:
+          DATA_FILE: ${{ github.workspace }}/price-data/prices.json
+        run: node scripts/update-prices.mjs
+
+      - name: Publish price data
+        working-directory: price-data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add prices.json
+          if git diff --staged --quiet; then
+            echo "No new price snapshot."
+          else
+            git commit -m "Update Raleigh fuel prices"
+            git push
+          fi
