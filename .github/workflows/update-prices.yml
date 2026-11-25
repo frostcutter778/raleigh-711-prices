@@ -2,12 +2,14 @@ name: Update fuel prices
 
 on:
   schedule:
-    # GitHub's shortest interval is 5 minutes, and a run can start later than the clock time.
-    - cron: '*/5 * * * *'
+    # GitHub often skips a 5-minute schedule. This only restarts the chain if a run dies.
+    # Each run starts the next check itself, about 5 minutes later.
+    - cron: '7,37 * * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: fuel-prices
@@ -50,3 +52,18 @@ jobs:
             git commit -m "Update Raleigh fuel prices"
             git push
           fi
+
+      - name: Start the next check
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          sleep 260
+          others=$(gh api "repos/${{ github.repository }}/actions/runs?per_page=30" --jq '[.workflow_runs[] | select(.name == "Update fuel prices" and (.status == "queued" or .status == "in_progress" or .status == "waiting" or .status == "pending") and .id != ${{ github.run_id }})] | length')
+          if [ "$others" != "0" ]; then
+            echo "Another check is already lined up ($others)."
+            exit 0
+          fi
+          gh api --method POST "repos/${{ github.repository }}/actions/workflows/update-prices.yml/dispatches" -f ref="${{ github.ref_name }}"
+          echo "Started the next check."

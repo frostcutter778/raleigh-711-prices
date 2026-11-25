@@ -8,7 +8,7 @@ Prices are the posted pump board from [7-Eleven’s store locator](https://www.7
 
 ## How it stays updated
 
-GitHub Pages only hosts static files, so a [GitHub Actions](.github/workflows/update-prices.yml) workflow checks 7-Eleven on the free schedule. GitHub’s shortest interval is every 5 minutes, and a run can start later than that. When a posted price changes, and at least once an hour, the workflow commits a snapshot to the `data` branch. The site reads that file.
+GitHub Pages only hosts static files, so a [GitHub Actions](.github/workflows/update-prices.yml) workflow checks 7-Eleven. GitHub’s own timer often skips a 5-minute schedule, so each run waits about 5 minutes and starts the next check itself. A twice-hourly schedule restarts that chain if a run dies. When a posted price changes, and at least once an hour, the workflow commits a snapshot to the `data` branch. The site reads that file.
 
 The code on `main` stays separate from those price commits.
 
