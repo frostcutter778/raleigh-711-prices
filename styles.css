@@ -330,6 +330,7 @@ td.cheapest .price { color: var(--low); }
 
 footer { padding: 8px 0 32px; color: var(--muted); font-size: 13px; }
 footer code { color: var(--ink); }
+footer .credit { margin-top: 14px; color: var(--ink); }
 
 
 @keyframes flash {
