@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Raleigh 7-Eleven fuel prices</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div>
+      <p class="eyebrow">Raleigh, North Carolina</p>
+      <h1>Fuel prices</h1>
+      <p class="lede">Posted 7-Eleven and Speedway prices inside the city. GitHub checks 7-Eleven about every 5 minutes and saves the history in this repository.</p>
+    </div>
+    <div class="status-block">
+      <p id="status-line" aria-live="polite">Starting the first check…</p>
+      <button type="button" id="check-now">Reload</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero" aria-live="polite"></section>
+
+    <section class="panel" aria-labelledby="compare-heading">
+      <div class="panel-head">
+        <h2 id="compare-heading">Compare stations</h2>
+        <div class="controls">
+          <div class="segment" role="radiogroup" aria-label="Fuel grade">
+            <button type="button" data-grade="regular" aria-pressed="true">Regular</button>
+            <button type="button" data-grade="midgrade" aria-pressed="false">Mid-grade</button>
+            <button type="button" data-grade="premium" aria-pressed="false">Premium</button>
+            <button type="button" data-grade="diesel" aria-pressed="false">Diesel</button>
+            <button type="button" data-grade="kerosene" aria-pressed="false">Kerosene</button>
+          </div>
+          <div class="segment" role="radiogroup" aria-label="Brand">
+            <button type="button" data-brand="all" aria-pressed="true">All</button>
+            <button type="button" data-brand="7-eleven" aria-pressed="false">7-Eleven</button>
+            <button type="button" data-brand="speedway" aria-pressed="false">Speedway</button>
+          </div>
+        </div>
+      </div>
+      <p id="scale-note" class="note"></p>
+      <div id="bars"></div>
+      <div class="table-wrap">
+        <table id="board">
+          <caption class="sr-only">Current posted fuel prices at Raleigh 7-Eleven and Speedway stations</caption>
+          <thead>
+            <tr>
+              <th aria-sort="none"><button type="button" data-sort="address">Station</button></th>
+              <th aria-sort="ascending"><button type="button" data-sort="regular">Regular</button></th>
+              <th aria-sort="none"><button type="button" data-sort="midgrade">Mid-grade</button></th>
+              <th aria-sort="none"><button type="button" data-sort="premium">Premium</button></th>
+              <th aria-sort="none"><button type="button" data-sort="diesel">Diesel</button></th>
+              <th class="kerosene" aria-sort="none"><button type="button" data-sort="kerosene">Kerosene</button></th>
+              <th aria-sort="none"><button type="button" data-sort="updated">Board updated</button></th>
+            </tr>
+          </thead>
+          <tbody id="board-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="history-layout">
+      <div class="panel" aria-labelledby="history-heading">
+        <div class="panel-head">
+          <h2 id="history-heading">Price over time</h2>
+          <div class="controls">
+            <div class="segment" role="radiogroup" aria-label="Time span">
+              <button type="button" data-range="24h" aria-pressed="true">24 hours</button>
+              <button type="button" data-range="7d" aria-pressed="false">7 days</button>
+              <button type="button" data-range="30d" aria-pressed="false">30 days</button>
+            </div>
+            <div class="segment" role="radiogroup" aria-label="Chart step">
+              <button type="button" data-bucket="hour" aria-pressed="true">Hourly</button>
+              <button type="button" data-bucket="day" aria-pressed="false">Daily</button>
+              <button type="button" data-bucket="reading" aria-pressed="false">Each reading</button>
+            </div>
+          </div>
+        </div>
+        <p id="history-note" class="note"></p>
+        <div id="chart"></div>
+        <div id="legend" class="legend"></div>
+      </div>
+      <aside class="panel" aria-labelledby="changes-heading">
+        <h2 id="changes-heading">When a price changes</h2>
+        <div id="changes"></div>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <p>Prices are the posted pump board from 7-Eleven’s store locator, before any 7REWARDS discount. Speedway stations are included because 7-Eleven owns them and lists them in the same locator. History is saved on the <code>data</code> branch when a posted price changes, and at least once an hour. GitHub’s free scheduler cannot check more often than every 5 minutes, and a run can start late.</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

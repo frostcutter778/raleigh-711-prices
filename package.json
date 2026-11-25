@@ -1,0 +1,14 @@
+{
+  "name": "raleigh-711-prices",
+  "private": false,
+  "type": "module",
+  "description": "Compare posted 7-Eleven and Speedway fuel prices in Raleigh, with hourly and daily history.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "update": "node scripts/update-prices.mjs"
+  }
+}
