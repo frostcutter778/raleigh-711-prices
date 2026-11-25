@@ -10,6 +10,6 @@
   "scripts": {
     "start": "node server.mjs",
     "update": "node scripts/update-prices.mjs",
-    "test": "node --test test/load.test.mjs"
+    "test": "node --test test/load.test.mjs test/site.test.mjs test/update.test.mjs"
   }
 }
