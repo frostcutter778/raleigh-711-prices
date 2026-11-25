@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T08:51:11.451Z",
+  "generatedAt": "2026-11-25T09:00:16.090Z",
   "lastError": null,
   "intervalMinutes": 5,
   "stations": {
@@ -16,7 +16,7 @@
       "url": "https://www.7-eleven.com/locations/nc/raleigh/4245-louisburg-rd-41842",
       "distanceLabel": "5.5 mi",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=35.84205%2C-78.57671",
-      "lastSeenAt": "2026-11-25T08:51:11.451Z"
+      "lastSeenAt": "2026-11-25T09:00:16.090Z"
     },
     "42196": {
       "id": "42196",
@@ -31,7 +31,7 @@
       "url": "https://www.7-eleven.com/locations/nc/raleigh/7707-fayetteville-rd-42196",
       "distanceLabel": "8.3 mi",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=35.66815%2C-78.69503",
-      "lastSeenAt": "2026-11-25T08:51:11.451Z"
+      "lastSeenAt": "2026-11-25T09:00:16.090Z"
     },
     "44652": {
       "id": "44652",
@@ -46,7 +46,7 @@
       "url": "https://www.7-eleven.com/locations/nc/raleigh/7413-louisburg-road-44652",
       "distanceLabel": "8.6 mi",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=35.87599%2C-78.54114",
-      "lastSeenAt": "2026-11-25T08:51:11.451Z"
+      "lastSeenAt": "2026-11-25T09:00:16.090Z"
     },
     "44653": {
       "id": "44653",
@@ -61,7 +61,7 @@
       "url": "https://www.7-eleven.com/locations/nc/raleigh/850-capital-blvd.-44653",
       "distanceLabel": "0.9 mi",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=35.792441%2C-78.641686",
-      "lastSeenAt": "2026-11-25T08:51:11.451Z"
+      "lastSeenAt": "2026-11-25T09:00:16.090Z"
     },
     "44656": {
       "id": "44656",
@@ -76,7 +76,7 @@
       "url": "https://www.7-eleven.com/locations/nc/raleigh/3912-western-blvd.-44656",
       "distanceLabel": "3.0 mi",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=35.78501%2C-78.69124",
-      "lastSeenAt": "2026-11-25T08:51:11.451Z"
+      "lastSeenAt": "2026-11-25T09:00:16.090Z"
     },
     "44657": {
       "id": "44657",
@@ -91,7 +91,7 @@
       "url": "https://www.7-eleven.com/locations/nc/raleigh/2600-south-saunders-st-44657",
       "distanceLabel": "2.3 mi",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=35.74817%2C-78.64952",
-      "lastSeenAt": "2026-11-25T08:51:11.451Z"
+      "lastSeenAt": "2026-11-25T09:00:16.090Z"
     },
     "44658": {
       "id": "44658",
@@ -106,7 +106,7 @@
       "url": "https://www.7-eleven.com/locations/nc/raleigh/10920-creedmoor-road-44658",
       "distanceLabel": "11.5 mi",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=35.9419%2C-78.68548",
-      "lastSeenAt": "2026-11-25T08:51:11.451Z"
+      "lastSeenAt": "2026-11-25T09:00:16.090Z"
     },
     "46876": {
       "id": "46876",
@@ -121,7 +121,7 @@
       "url": "https://www.7-eleven.com/locations/nc/raleigh/1741-trawick-road-46876",
       "distanceLabel": "3.7 mi",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=35.80131%2C-78.57841",
-      "lastSeenAt": "2026-11-25T08:51:11.451Z"
+      "lastSeenAt": "2026-11-25T09:00:16.090Z"
     }
   },
   "readings": [
@@ -491,6 +491,94 @@
     {
       "storeId": "44658",
       "observedAt": "2026-11-25T08:51:11.451Z",
+      "priceUpdatedAt": "2026-11-25T03:48:01-05:00",
+      "signature": "2026-11-25T03:48:01-05:00|3229|3679|4079|5079|6599",
+      "regular": 3.229,
+      "midgrade": 3.679,
+      "premium": 4.079,
+      "diesel": 5.079,
+      "kerosene": 6.599
+    },
+    {
+      "storeId": "44653",
+      "observedAt": "2026-11-25T09:00:16.090Z",
+      "priceUpdatedAt": "2026-11-25T01:42:57-05:00",
+      "signature": "2026-11-25T01:42:57-05:00|2839|3289|3689|5099|",
+      "regular": 2.839,
+      "midgrade": 3.289,
+      "premium": 3.689,
+      "diesel": 5.099,
+      "kerosene": null
+    },
+    {
+      "storeId": "44657",
+      "observedAt": "2026-11-25T09:00:16.090Z",
+      "priceUpdatedAt": "2026-11-24T17:25:19-05:00",
+      "signature": "2026-11-24T17:25:19-05:00|2839|3239|3539|4999|",
+      "regular": 2.839,
+      "midgrade": 3.239,
+      "premium": 3.539,
+      "diesel": 4.999,
+      "kerosene": null
+    },
+    {
+      "storeId": "44656",
+      "observedAt": "2026-11-25T09:00:16.090Z",
+      "priceUpdatedAt": "2026-11-24T22:24:42-05:00",
+      "signature": "2026-11-24T22:24:42-05:00|2859|3299|3699|4939|",
+      "regular": 2.859,
+      "midgrade": 3.299,
+      "premium": 3.699,
+      "diesel": 4.939,
+      "kerosene": null
+    },
+    {
+      "storeId": "46876",
+      "observedAt": "2026-11-25T09:00:16.090Z",
+      "priceUpdatedAt": "2026-11-24T22:45:32-05:00",
+      "signature": "2026-11-24T22:45:32-05:00|2789|3239|3639|5029|",
+      "regular": 2.789,
+      "midgrade": 3.239,
+      "premium": 3.639,
+      "diesel": 5.029,
+      "kerosene": null
+    },
+    {
+      "storeId": "41842",
+      "observedAt": "2026-11-25T09:00:16.090Z",
+      "priceUpdatedAt": "2026-11-24T23:46:18-05:00",
+      "signature": "2026-11-24T23:46:18-05:00|2839|3289|3689|4959|",
+      "regular": 2.839,
+      "midgrade": 3.289,
+      "premium": 3.689,
+      "diesel": 4.959,
+      "kerosene": null
+    },
+    {
+      "storeId": "42196",
+      "observedAt": "2026-11-25T09:00:16.090Z",
+      "priceUpdatedAt": "2026-11-24T18:46:23-05:00",
+      "signature": "2026-11-24T18:46:23-05:00|2849|3249|3649|4879|",
+      "regular": 2.849,
+      "midgrade": 3.249,
+      "premium": 3.649,
+      "diesel": 4.879,
+      "kerosene": null
+    },
+    {
+      "storeId": "44652",
+      "observedAt": "2026-11-25T09:00:16.090Z",
+      "priceUpdatedAt": "2026-11-24T12:46:03-05:00",
+      "signature": "2026-11-24T12:46:03-05:00|2899|3349|3749|5299|",
+      "regular": 2.899,
+      "midgrade": 3.349,
+      "premium": 3.749,
+      "diesel": 5.299,
+      "kerosene": null
+    },
+    {
+      "storeId": "44658",
+      "observedAt": "2026-11-25T09:00:16.090Z",
       "priceUpdatedAt": "2026-11-25T03:48:01-05:00",
       "signature": "2026-11-25T03:48:01-05:00|3229|3679|4079|5079|6599",
       "regular": 3.229,
