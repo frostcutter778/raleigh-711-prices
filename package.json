@@ -9,6 +9,7 @@
   },
   "scripts": {
     "start": "node server.mjs",
-    "update": "node scripts/update-prices.mjs"
+    "update": "node scripts/update-prices.mjs",
+    "test": "node --test test/load.test.mjs"
   }
 }
