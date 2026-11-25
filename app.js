@@ -315,7 +315,7 @@ function renderChanges() {
   const changes = state.board?.changes || [];
   changesBox.replaceChildren();
   if (!changes.length) {
-    changesBox.append(el('p', { class: 'empty' }, 'No posted price has changed since tracking started. The first check only records the current board. The next change shows up here within a minute of 7-Eleven publishing it.'));
+    changesBox.append(el('p', { class: 'empty' }, 'No posted price has changed since tracking started. The first check only records the current board. The next change shows up here after GitHub’s next check, about every 5 minutes.'));
     return;
   }
   for (const change of changes) {
