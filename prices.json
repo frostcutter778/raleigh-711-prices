@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T21:17:31.305Z",
+  "generatedAt": "2026-11-26T21:22:09.175Z",
   "lastError": null,
   "intervalMinutes": 5,
   "stations": {
@@ -16,7 +16,7 @@
       "url": "https://www.7-eleven.com/locations/nc/raleigh/4245-louisburg-rd-41842",
       "distanceLabel": "5.5 mi",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=35.84205%2C-78.57671",
-      "lastSeenAt": "2026-11-26T21:17:31.305Z"
+      "lastSeenAt": "2026-11-26T21:22:09.175Z"
     },
     "42196": {
       "id": "42196",
@@ -31,7 +31,7 @@
       "url": "https://www.7-eleven.com/locations/nc/raleigh/7707-fayetteville-rd-42196",
       "distanceLabel": "8.3 mi",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=35.66815%2C-78.69503",
-      "lastSeenAt": "2026-11-26T21:17:31.305Z"
+      "lastSeenAt": "2026-11-26T21:22:09.175Z"
     },
     "44652": {
       "id": "44652",
@@ -46,7 +46,7 @@
       "url": "https://www.7-eleven.com/locations/nc/raleigh/7413-louisburg-road-44652",
       "distanceLabel": "8.6 mi",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=35.87599%2C-78.54114",
-      "lastSeenAt": "2026-11-26T21:17:31.305Z"
+      "lastSeenAt": "2026-11-26T21:22:09.175Z"
     },
     "44653": {
       "id": "44653",
@@ -61,7 +61,7 @@
       "url": "https://www.7-eleven.com/locations/nc/raleigh/850-capital-blvd.-44653",
       "distanceLabel": "0.9 mi",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=35.792441%2C-78.641686",
-      "lastSeenAt": "2026-11-26T21:17:31.305Z"
+      "lastSeenAt": "2026-11-26T21:22:09.175Z"
     },
     "44656": {
       "id": "44656",
@@ -76,7 +76,7 @@
       "url": "https://www.7-eleven.com/locations/nc/raleigh/3912-western-blvd.-44656",
       "distanceLabel": "3.0 mi",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=35.78501%2C-78.69124",
-      "lastSeenAt": "2026-11-26T21:17:31.305Z"
+      "lastSeenAt": "2026-11-26T21:22:09.175Z"
     },
     "44657": {
       "id": "44657",
@@ -91,7 +91,7 @@
       "url": "https://www.7-eleven.com/locations/nc/raleigh/2600-south-saunders-st-44657",
       "distanceLabel": "2.3 mi",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=35.74817%2C-78.64952",
-      "lastSeenAt": "2026-11-26T21:17:31.305Z"
+      "lastSeenAt": "2026-11-26T21:22:09.175Z"
     },
     "44658": {
       "id": "44658",
@@ -106,7 +106,7 @@
       "url": "https://www.7-eleven.com/locations/nc/raleigh/10920-creedmoor-road-44658",
       "distanceLabel": "11.5 mi",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=35.9419%2C-78.68548",
-      "lastSeenAt": "2026-11-26T21:17:31.305Z"
+      "lastSeenAt": "2026-11-26T21:22:09.175Z"
     },
     "46876": {
       "id": "46876",
@@ -121,7 +121,7 @@
       "url": "https://www.7-eleven.com/locations/nc/raleigh/1741-trawick-road-46876",
       "distanceLabel": "3.7 mi",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=35.80131%2C-78.57841",
-      "lastSeenAt": "2026-11-26T21:17:31.305Z"
+      "lastSeenAt": "2026-11-26T21:22:09.175Z"
     }
   },
   "readings": [
@@ -7098,6 +7098,17 @@
       "premium": 3.699,
       "diesel": 5.299,
       "kerosene": null
+    },
+    {
+      "storeId": "44657",
+      "observedAt": "2026-11-26T21:22:09.175Z",
+      "priceUpdatedAt": "2026-11-26T16:16:16-05:00",
+      "signature": "2026-11-26T16:16:16-05:00|2799|3199|3499|4979|",
+      "regular": 2.799,
+      "midgrade": 3.199,
+      "premium": 3.499,
+      "diesel": 4.979,
+      "kerosene": null
     }
   ],
   "changes": [
@@ -7541,6 +7552,33 @@
       "grade": "premium",
       "oldPrice": 3.639,
       "newPrice": 3.629
+    },
+    {
+      "id": 50,
+      "storeId": "44657",
+      "detectedAt": "2026-11-26T21:22:09.175Z",
+      "priceUpdatedAt": "2026-11-26T16:16:16-05:00",
+      "grade": "regular",
+      "oldPrice": 2.819,
+      "newPrice": 2.799
+    },
+    {
+      "id": 51,
+      "storeId": "44657",
+      "detectedAt": "2026-11-26T21:22:09.175Z",
+      "priceUpdatedAt": "2026-11-26T16:16:16-05:00",
+      "grade": "midgrade",
+      "oldPrice": 3.219,
+      "newPrice": 3.199
+    },
+    {
+      "id": 52,
+      "storeId": "44657",
+      "detectedAt": "2026-11-26T21:22:09.175Z",
+      "priceUpdatedAt": "2026-11-26T16:16:16-05:00",
+      "grade": "premium",
+      "oldPrice": 3.519,
+      "newPrice": 3.499
     }
   ]
 }
